@@ -75,14 +75,7 @@
 .display { font-size: clamp(52px, 5vw, 76px); line-height: 1.04; font-weight: 400; letter-spacing: -2px; }
 .display.small { font-size: clamp(44px, 4vw, 60px); margin: 26px 0; }
 .dandelion-hero { width: 100%; height: 650px; background: #f5f3ef; position: relative; overflow: hidden; }
-.dandelion-base, .dandelion { position: absolute; left: 50%; top: 0; height: 100%; transform: translateX(-50%); object-fit: contain; object-position: center; }
-.dandelion-base { width: 100%; opacity: .75; }
-.dandelion { width: 100%; }
-.wish { position: absolute; left: 51%; top: 58px; width: 220px; display: flex; flex-direction: column; align-items: flex-end; color: #1a4fad; opacity: .6; }
-.wish input { width: 100%; border: 0; border-bottom: 1px solid #1a4fad; background: transparent; padding: 6px 0; text-align: right; font: 32px/1.4 "Familjen Grotesk:Regular", sans-serif; outline: none; color: #1a4fad; }
-.wish input::placeholder { color: #1a4fad; }
-.wish span { font: 14px/1.5 "Familjen Grotesk:Regular", sans-serif; text-align: right; margin-top: 12px; }
-.wish img { width: 44px; height: 44px; margin-top: 10px; }
+.dandelion-base { position: absolute; left: calc(50% - 275px); top: 18px; width: 100%; height: 100%; transform: translateX(-50%); object-fit: contain; object-position: center; }
 .welcome { min-height: 200px; padding: 32px 40px 28px; background: #f7f7f7; border-bottom: 1px solid #c6c6c6; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; }
 .welcome h1 { font-size: clamp(40px, 4vw, 60px); line-height: 1.04; font-weight: 400; }
 .welcome p, .note { font: italic 12px/1.5 "IBM Plex Mono:Medium Italic", monospace; color: #5c5c5c; margin: 24px auto 0; }
@@ -180,8 +173,7 @@
   .nav a { padding: 12px 0; }
   .section, .page-intro, .catalog-section, .resource-section { padding-left: 28px; padding-right: 28px; }
   .dandelion-hero { height: 520px; }
-  .dandelion-base, .dandelion { width: 100%; height: 100%; top: 0; object-position: center; }
-  .wish { left: auto; right: 8%; top: 40px; }
+  .dandelion-base { width: 100%; height: 100%; object-position: center; }
   .home-intro, .team-intro .split, .definition-copy, .split-copy { grid-template-columns: 1fr; }
   .home-photo { width: 100%; height: 440px; object-position: center 40%; }
   .three-cols, .catalog-grid { grid-template-columns: repeat(2, 1fr); }
@@ -201,9 +193,7 @@
   .mark { width: 26px; height: 26px; }
   .page-intro h1 { font-size: 42px; letter-spacing: -1.5px; }
   .dandelion-hero { height: 440px; }
-  .dandelion-base, .dandelion { width: 145%; left: 50%; }
-  .wish { width: 170px; right: 5%; }
-  .wish input { font-size: 24px; }
+  .dandelion-base { width: 145%; }
   .welcome { min-height: 210px; padding: 30px 24px; }
   .welcome h1 { font-size: 36px; }
   .display { font-size: 50px; }

@@ -172,22 +172,8 @@ function Home() {
         <img
           className="dandelion-base"
           src="/assets/home-dandelion-detail.png"
-          alt=""
-        />
-        <img
-          className="dandelion"
-          src="/assets/home-dandelion.png"
           alt="Blue dandelion artwork"
         />
-        <div className="wish">
-          <input aria-label="Make a wish" placeholder="make a wish…" />
-          <span>
-            press &amp; hold to blow
-            <br />
-            drag to direct the wind
-          </span>
-          <img src="/assets/home-compass.png" alt="" />
-        </div>
       </section>
       <section className="welcome">
         <h1>
