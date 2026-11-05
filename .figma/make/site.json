@@ -1,0 +1,10 @@
+{
+  "title": "BreakPoints Website",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
