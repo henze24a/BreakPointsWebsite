@@ -176,11 +176,7 @@ function Home() {
         />
       </section>
       <section className="welcome">
-        <h1>
-          Welcome to the BreakPoints
-          <br />
-          Landing Page.
-        </h1>
+        <h1>Welcome to BreakPoints.</h1>
         <p>
           A pilot program to inspire and empower creative tech trajectories by
           prompting passersby to pause their day for interactive displays.
@@ -207,11 +203,12 @@ function Home() {
             </PageLink>
           </div>
         </div>
-        <img
-          className="home-photo"
-          src="/assets/home-hallway.png"
-          alt="A student interacting with a hallway display"
-        />
+        <div className="home-photo">
+          <img
+            src="/assets/home-hallway.png"
+            alt="A student interacting with a hallway display"
+          />
+        </div>
       </section>
       <section className="definition section gray">
         <div className="definition-copy">
@@ -519,12 +516,12 @@ function Resources() {
 const launchSteps = [
   [
     "Get inspired",
-    "Explore demos of previous student projects to gain inspiration. Choose who the experience is for and what might make them stop, smile, or connect.",
+    "Explore existing creative code examples to gain inspiration and a starting point. Consider who you’re designing ann experience is for and what might make them stop, smile, or connect.",
     "Try asking: What could two people discover together?",
-    "A one-sentence intention.",
+    "An existing project that inspires you.",
     "launchpad-inspire.png",
-    "p5.js demos",
-    "https://p5js.org/reference/",
+    "p5.js featured examples",
+    "https://p5js.org/examples/",
   ],
   [
     "Modify an existing demo",
@@ -633,7 +630,11 @@ function Launchpad() {
                     rel="noreferrer"
                   >
                     {link}
-                    <span>↗</span>
+                    <span
+                      className={i === 0 ? "underline underline-offset-4" : ""}
+                    >
+                      ↗
+                    </span>
                   </a>
                 </div>
               </article>
